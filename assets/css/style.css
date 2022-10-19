@@ -283,9 +283,6 @@ span{
 }
 
 @media (max-width: 650px){
-    .welcome__card__block{
-        width: 100%;
-    }
     .welcome__title{
         font-size: 30px;
         line-height: 40px;
@@ -298,6 +295,12 @@ span{
         width: 100%;
     }
     .welcome__footer__img{
+        width: 100%;
+    }
+}
+
+@media (max-width: 380px) {
+    .welcome__card__block{
         width: 100%;
     }
 }
