@@ -1,0 +1,305 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaBookC.ttf');
+}
+.btn{
+    background: #A387C4;
+    border-radius: 30px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    color: #FFFFFF;
+    padding: 20px 90px;
+    border: 3px solid #A387C4;;
+}
+.btn_i{
+    background: unset;
+}
+.title{
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 66px;
+    color: #FFFFFF;
+}
+.title_p{
+    color: #4C3D74;
+}
+.text{
+    font-family: 'Futura';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #FFFFFF;
+}
+.text_p{
+    color: #4C3D74;
+}
+body{
+    text-transform: uppercase;
+    font-family: 'Futura';
+}
+.container{
+    width: 1160px;
+    margin: 0 auto;
+}
+.header{
+    padding-top: 105px;
+    background: #4C3D74;
+}
+.header__wrap{
+    justify-content: space-between;
+    display: flex;
+}
+.header__logo{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF
+}
+.header__menu{
+}
+.header__list{
+    display: flex;
+}
+.header__item:not(:last-of-type){
+    margin-right: 27px;
+}
+.header__link{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 19px;
+    color: #FFFFFF;
+
+}
+/* intro */
+.intro{
+    padding-bottom: 180px;
+    background: #4C3D74;
+}
+.intro__wrap{
+    display: flex;
+    align-items: center;
+}
+.intro__block{}
+.intro__subtitle{
+    font-size: 20px;
+    line-height: 20px;
+    margin-bottom: 20px;
+}
+.intro__title{
+    margin-bottom: 30px;
+}
+.intro__btns{
+    margin-top: 45px;
+    display: flex;
+}
+.intro__btn:not(:last-of-type){
+    margin-right: 25px;
+}
+.intro__img{
+    width: 472px;
+    height: 472px;
+}
+.intro__img img{
+    height: 100%;
+    object-fit: cover;
+}
+/* welcome */
+.welcome{
+    font-family: 'Futura';
+}
+.welcome__wrap{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.welcome__title{
+    margin-top: 167px;
+    margin-bottom: 46px;
+    color: #504178;
+}
+.welcome__card{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.welcome__card__block{}
+.welcome__card__block__img{
+    margin-bottom: -110px;
+    margin-left: -30px;
+    width: 89px;
+    height: 89px;
+}
+.welcome__card__block__text{
+    width: 253px;
+    padding: 30px 30px 30px 58px;
+    background: #F2EEF7;
+    border: 3px solid #4C3D74;
+    border-radius: 30px;
+    color: #4C3D74;
+}
+.welcome__footer{
+    margin-top: 43px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.welcome__footer__text{
+    height: 60px;
+    width: 511px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: #4C3D74;
+}
+.welcome__footer__btn{
+    height: 60px;
+    padding-top: 21px;
+}
+.welcome__footer__btn__link{
+    margin-top: 10px;
+}
+.welcome__footer__img{
+    width: 243px;
+    height: 243px;
+}
+span{
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+}
+/*Adaptive*/
+/* Intro */
+@media (max-width:1280px) {
+    .header{
+        padding-top: 80px;
+    }
+    .container{
+        width: unset;
+        padding: 0 15px;
+    }
+    .intro{
+        padding-bottom: 130px;
+    }
+    .intro__img{
+        width: 310px;
+        height: 310px;
+    }
+}
+@media (max-width:1024px) {
+    .header{
+        padding: 50px 0;
+    }
+    .intro{
+        padding-bottom: 50px;
+    }
+    .intro__wrap{
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .intro__block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .intro__title, .intro__subtitle{
+        text-align: center;
+    }
+}
+@media (max-width: 768px) {
+    .header__menu{
+        display: none;
+    }
+    .header__burger{
+        color: #FFFFFF;
+    }
+    .intro__subtitle{
+        font-size: 16px;
+        line-height: 1.5;
+        margin-bottom: 27px;
+    }
+    .intro__title{
+        font-size: 30px;
+        line-height: 40px;
+        margin-bottom: 27px;
+    }
+    .intro__btns{
+        flex-direction: column;
+    }
+    .intro__btn:not(:last-of-type){
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
+/*Adaptive*/
+/* Welcome */
+@media (max-width:1180px) {
+    .welcome__card{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+    .welcome__footer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 50px;
+        justify-content: center;
+    }
+}
+@media (max-width:1024px) {
+    .welcome__title{
+        font-size: 35px;
+        line-height: 40px;
+        text-align: center;
+    }
+}
+@media (max-width: 900px){
+    .welcome__footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px){
+    .welcome__title{
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+    }
+    .welcome__footer__text{
+        width: 100%;
+    }
+    .welcome__footer__btn{
+        width: 100%;
+    }
+    .welcome__footer__img{
+        width: 100%;
+    }
+}
+@media (max-width: 380px) {
+    .welcome__card__block{
+        width: 100%;
+    }
+}
